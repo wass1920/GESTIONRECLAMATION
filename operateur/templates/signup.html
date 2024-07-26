@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="{% static 'css/styleaccueil.css' %}">
+</head>
+<body>
+    <script type="text/javascript" src="{% static 'js/j1.js' %}"></script>
+
+    <div class="login-container">
+        <h2><label style="color:white;">Sign up!</label></h2>
+        
+        <form method="POST" id="f1">
+            {% csrf_token %}
+            {{ form.as_p }}
+            
+            
+            <button type="submit" class="btn btn-dark" style="background-color:red; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">Signup</button>
+
+            <br>
+            <h5><a href="http://127.0.0.1:8000/operateur/login/" class="login-link">Already a member</a></h5>
+        </form>
+    </div>
+</body>
+</html>

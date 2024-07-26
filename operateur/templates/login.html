@@ -1,0 +1,41 @@
+{% load static %}
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+  <link rel="stylesheet" href="{% static 'css/styleaccueil.css' %}">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2><label style="color: white">Welcome !</label></h2>
+    <form  method="post">
+      {% csrf_token %}
+      <div class="input-container">
+        <input type="text" name="username" placeholder="username" required>
+      </div>
+      <div class="input-container">
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+      <label for="rememberMe">
+        <input type="checkbox" id="rememberMe" name="remember_me"> Remember me
+      </label>
+
+      
+ 
+      <button type="submit">Login</button>
+     
+    </form>
+
+    <div class="signup-container">
+      <h5><a href="http://127.0.0.1:8000/operateur/signup/" class="login-link">Not a member ?</a></h5>
+    </div>
+    <a href="{% url 'accueil' %}" style="background-color: red; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; text-align: center; font-size: 16px;">Goback</a>
+
+  </div>
+  
+</body>
+</html>

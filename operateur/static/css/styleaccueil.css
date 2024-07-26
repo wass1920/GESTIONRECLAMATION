@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+html, body {
+    height: 100%; /* Assure que l'élément html et body prennent toute la hauteur disponible */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white; /* Couleur du texte en blanc */
+    text-align: center; /* Centrage du texte */
+    margin-top: 50px; /* Espacement en haut */
+}
+
+.box {
+    background-color: red;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.login-link {
+    color: rgb(255, 255, 255); /* Couleur du lien harmonisée avec l'accueil */
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px red;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5); /* Fond harmonisé avec l'accueil */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: rgb(5, 0, 71); /* Couleur du texte harmonisée avec l'accueil */
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 22px); /* Ajustement pour le padding et la bordure */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Supprime le contour bleu lorsqu'un champ est en focus */
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(5, 4, 4, 0.795); /* Fond harmonisé avec l'accueil */
+    color: white; /* Couleur du texte harmonisée avec l'accueil */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red; /* Couleur de survol harmonisée avec l'accueil */
+    color: #c9c3ca; /* Couleur du texte de survol harmonisée avec l'accueil */
+}
+
+#rememberMe {
+    display: none;
+    color:white
+}
+
+label[for="rememberMe"] {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+label[for="rememberMe"]:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000000;
+    background-color: #fff;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+label[for="rememberMe"]:checked:before {
+    background-color: #2e6ead;
+    content: "\2713";
+    font-size: 12px;
+    color: rgb(66, 0, 0); /* Couleur du texte harmonisée avec l'accueil */
+    text-align: center;
+    line-height: 15px;
+}
+
+p{
+    color:white;
+}
+
